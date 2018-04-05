@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:rowCount="5"
+    tools:context="com.example.longana.MainActivity"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/loadGameText"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:layout_columnSpan="3"
+        android:text="Would you like to load a game?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="303dp"
+        android:layout_height="210dp"
+        android:onClick="yesClick"
+        android:text="Yes"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/noButton"
+        android:layout_width="303dp"
+        android:layout_height="210dp"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:onClick="noClick"
+        android:text="No"
+        android:textSize="36sp" />
+</GridLayout>
